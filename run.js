@@ -38,8 +38,8 @@ app.post("/:address/:mh", function(req,res){
 });
 
 
-//start the mining server on port 5555
-app.listen(5555);
+//start the mining server on port 6555
+app.listen(6555);
 
 
 
