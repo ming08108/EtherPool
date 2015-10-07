@@ -3,7 +3,7 @@ import json
 import requests
 import time
 
-r = redis.StrictRedis(password="p4o2346tatogra234ssele355phantgesfrjn")
+r = redis.StrictRedis(password="PASSWORD HERE")
 ethToWei = 1000000000000000000
 
 
@@ -36,7 +36,7 @@ def waitForTx(txId):
 
 r.set("lastpayout", int(round(time.time() * 1000)))
 
-myAddress = "0xd1e56c2e765180aa0371928fd4d1e41fbcda34d4"
+myAddress = "POOLADDRESS"
 balances = r.hgetall("balances")
 
 for address, value in balances.iteritems():
